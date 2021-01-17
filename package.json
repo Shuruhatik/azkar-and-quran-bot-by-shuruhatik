@@ -1,0 +1,30 @@
+{
+  "name": "Azkar-and-quran-bot-by-shuruhatik#0001",
+  "version": "1.0.0",
+  "description": "quranbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Azkar-and-quran",
+    "shuruhatik#0001",
+    "Repl",
+    "Azkar-and-quran-bot-by-shuruhatik#0001"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "discord.js": "^12.5.1",
+    "express": "^4.17.1",
+    "ffmpeg-static": "^4.2.7",
+    "moment": "^2.29.1",
+    "ms": "^2.1.3",
+    "pretty": "^2.0.0",
+    "pretty-ms": "^7.0.1",
+    "quran": "0.0.9",
+    "spotify": "^0.3.0",
+    "ytdl-core": "^4.4.3"
+  }
+}
