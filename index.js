@@ -13,28 +13,50 @@ const ytdl = require('ytdl-core');
 const moment = require("moment");
 const ms = require("ms");
 const pretty = require("pretty-ms");
+/*
+New Update! 2021/01/18
+تم تحويل القران الكريم الي راديو القران الكريم
+الاذاعة الموجودة حالية من القاهرة
+لكي تقوم بتغيره قوم بتغير 
+قيمة
+radioquran
+ضع بيه رابط بث مباشر من يوتيوب ااذعة قران كريم بالدولة الذي تريدة 
 
+ان شاء الله تحديث ذا يكون عجابكم :)
+
+*/
 ////////تعديلات القران الكريم
 
 var botbyshuruhatik = {
-  channelid: "794954207853281284",
-  guildid: "794954207853281280",
-  status: "",
-  prefix: "#",
-  alquruan: "",
-  colorembed: "",
+  channelid: "794954207853281284",////اييد روم القران 
+  guildid: "794954207853281280",////ايدي سيرفر للي فيه روم القران
+  status: "",////حالة البوت
+  prefix: "#",////بادئة البوت
+  radioquran: "",////اذا كنت تريد تغير مقطع القران الكريم
+  colorembed: "",////لون امبد المصحف
 };
 
 ////////////اذكار
 
 var azkarbyshuruhatik = {
-  imageembed: "",
-  colorembed: "",
-  channelname: "azkar",
-  time: "9000",
+  imageembed: "",////صورة رسالة الاذكار
+  colorembed: "",////لون رسالة الاذكار
+  channelname: "azkar",////روم الاذكار
+  time: "900000",////وقت الاذكار
 };
 
+/*
+New Update! 2021/01/18
+تم تحويل القران الكريم الي راديو القران الكريم
+الاذاعة الموجودة حالية من القاهرة
+لكي تقوم بتغيره قوم بتغير 
+قيمة
+radioquran
+ضع بيه رابط بث مباشر من يوتيوب ااذعة قران كريم بالدولة الذي تريدة 
 
+ان شاء الله تحديث ذا يكون عجابكم :)
+
+*/
 ///All Copy Right Reserved For: Shuruhatik  in YT
 
 
@@ -46,7 +68,7 @@ shuruhatik.on("ready", async () => {
     |                                                |
     |------------------------------------------------|
     |                                                |
-    | - All Copyrights To https://www.shuruhatik.ml/ |
+    | - All Copyrights To https://www.shuruhatik.xyz/|
     |                                                |
     |------------------------------------------------|
     |                                                |
@@ -63,7 +85,7 @@ shuruhatik.on("ready", async () => {
 ██─▄─▀█─██─███─██████─▄─▀██▄─▄████▄▄▄▄─█─▄─██─██─███─▄─▄██─██─██─▄─██─▀─████─████─███─▄▀██
 ▀▄▄▄▄▀▀▄▄▄▄▀▀▄▄▄▀▀▀▀▄▄▄▄▀▀▀▄▄▄▀▀▀▀▄▄▄▄▄▀▄▀▄▀▀▄▄▄▄▀▀▄▄▀▄▄▀▀▄▄▄▄▀▀▄▀▄▀▄▄▀▄▄▀▀▄▄▄▀▀▄▄▄▀▄▄▀▄▄▀
     `)
-  await shuruhatik.user.setActivity(`${shuruhatik.stat || "Bot by Shuruhatik"}`, {///All Copy Right Reserved For: Shuruhatik  in YT
+  await shuruhatik.user.setActivity(`${botbyshuruhatik.status || "Bot by Shuruhatik"}`, {///All Copy Right Reserved For: Shuruhatik  in YT
     type: "COMPETING",
   })
 });///All Copy Right Reserved For: Shuruhatik  in YT
@@ -146,7 +168,7 @@ shuruhatik.on('ready', async () => {
 
   if(!channel) return;
   const playquruan = await channel.join();
-   playquruan.play(ytdl(botbyshuruhatik.alquruan || "https://www.youtube.com/watch?v=M6z0Qql4-qo&t=4s"))
+   playquruan.play(ytdl(botbyshuruhatik.radioquran || "https://www.youtube.com/watch?v=gHwyTds2hx4"))
 });
 
 setInterval(async function(){
@@ -157,7 +179,7 @@ setInterval(async function(){
     if(!channel) return;
    
    const playquruan = await channel.join()
-   playquruan.play(ytdl(botbyshuruhatik.alquruan || "https://www.youtube.com/watch?v=M6z0Qql4-qo&t=4s"))
+   playquruan.play(ytdl(botbyshuruhatik.radioquran || "https://www.youtube.com/watch?v=gHwyTds2hx4"))
   }
 }, 15000)
 
